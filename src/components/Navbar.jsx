@@ -1,0 +1,2 @@
+import { Menu, Bell } from 'lucide-react';
+export default function Navbar({ title, subtitle, setOpen }) { const openMenu = () => { if (setOpen) setOpen(true); document.querySelector('.sidebar')?.classList.add('open'); }; return <header className="topbar"><button className="menu-btn" onClick={openMenu}><Menu/></button><div><h1>{title}</h1><p>{subtitle}</p></div><div className="header-actions"><button className="notification"><Bell size={19}/><i/></button><div className="avatar">EP</div></div></header> }

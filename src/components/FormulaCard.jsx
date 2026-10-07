@@ -1,0 +1,1 @@
+export default function FormulaCard({ title, formula, children }) { return <section className="formula-card"><span className="eyebrow">{title}</span><div className="formula">{formula}</div>{children && <p>{children}</p>}</section> }
